@@ -3,13 +3,13 @@ import time
 import select
 
 IP = ''
-PORT = 8216
+PORT = 8202
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 server_socket.bind((IP, PORT))
 
-server_socket.listen(10)
+server_socket.listen(30)
 print("server up!")
 
 socket_list = [server_socket]
